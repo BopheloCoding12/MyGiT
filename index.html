@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">CareerHub</div>
+        <ul class="nav-links">
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Your Gateway to Future Opportunities</h1>
+            <p>Explore top internships and jobs that fit your career goals.</p>
+            <a href="jobs.html" class="btn btn-primary">Find Jobs</a>
+        </div>
+    </section>
+
+    <!-- Job Search Section -->
+    <section id="jobs" class="job-search">
+        <h2>Find Your Dream Internship or Job</h2>
+        <div class="search-bar">
+            <input type="text" id="job-search" placeholder="Enter job title or keyword" aria-label="Job Search">
+            <button class="btn btn-search">Search</button>
+        </div>
+
+        <div class="featured-jobs">
+            <h3>Featured Jobs</h3>
+            <div class="job-cards">
+                <!-- Job Card Example -->
+                <div class="job-card" onclick="openModal('job1')">
+                    <h4>Software Engineer Intern</h4>
+                    <p>Google | Remote</p>
+                    <p>Deadline: May 10, 2025</p>
+                    <a href="jobs.html" class="btn btn-secondary">View Job</a>
+                </div>
+                <!-- Job Card Example -->
+                <div class="job-card" onclick="openModal('job2')">
+                    <h4>Marketing Specialist</h4>
+                    <p>Amazon | New York, USA</p>
+                    <p>Deadline: April 25, 2025</p>
+                    <a href="jobs.html" class="btn btn-secondary">View Job</a>
+                </div>
+                <!-- Job Card Example -->
+                <div class="job-card" onclick="openModal('job3')">
+                    <h4>UI/UX Designer</h4>
+                    <p>Spotify | Remote</p>
+                    <p>Deadline: June 5, 2025</p>
+                    <a href="jobs.html" class="btn btn-secondary">View Job</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="job1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('job1')">&times;</span>
+            <h2>Software Engineer Intern</h2>
+            <p>Details about the job...</p>
+        </div>
+    </div>
+    <div id="job2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('job2')">&times;</span>
+            <h2>Marketing Specialist</h2>
+            <p>Details about the job...</p>
+        </div>
+    </div>
+    <div id="job3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('job3')">&times;</span>
+            <h2>UI/UX Designer</h2>
+            <p>Details about the job...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CareerHub. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
